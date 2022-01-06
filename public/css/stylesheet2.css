@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ヒラギノ角ゴ　pro W3", "Hiragino KaKu Gothic Pro", "メイリオ"、Meiryo,Osaka, "MS Pゴシック","MS PGothic",sans-serif;
+    color: black;
+    font-size: 16px;
+    line-height: 150%;
+    width:100%;
+    position: relative;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    clear: both;
+    display: grid;
+    grid-template-columns: 100vw 30vw;
+}
+
+#main {
+    width:100%;
+    padding: 10px 30px 10px 0px;
+}
