@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('ownerinfo','OwnerController@create');
 Route::post('user_page','OwnerController@store');
+Route::post('search','SearchController@index');

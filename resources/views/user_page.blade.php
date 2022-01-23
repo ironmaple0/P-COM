@@ -7,6 +7,7 @@
  </head>
 
  <body>
+ <form action="search" method="POST">
 　<select name="week_day">
 　<option value="monday">月</option>
 　<option value="Tuesday">火</option>
@@ -31,3 +32,6 @@
   <option value="half_year">半年</option>
   <option value="one_year">1年</option>
   </select>
+  <button type="submit" name="search">検索</button>
+ </form>
+  

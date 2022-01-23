@@ -28,7 +28,7 @@ class CreateOwnersTable extends Migration
             $table->string('status');
             $table->string('remark');
             $table->timestamps();
-            $table->foreign('owner_id')->references('id')->on('users');
+            //$table->foreign('owner_id')->references('id')->on('users');
         });
     }
 
