@@ -3,10 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\owner;
+use App\Owner;
 
 class OwnerController extends Controller
 {
+    public function index() {
+        $owners= owner::all();
+            $data= [ 'owners' => $owners];
+            return view('user_page',$data);
+    }
+
     public function create() {
         return view('owner_page');
     }
@@ -25,6 +31,6 @@ class OwnerController extends Controller
         $owner->status = $request->status;
         $owner->remark = $request->remark;
         $owner->save();
-        return view("user_page"); 
+        return redirect('user_page'); 
     }
 }
