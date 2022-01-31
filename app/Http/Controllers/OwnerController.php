@@ -31,6 +31,6 @@ class OwnerController extends Controller
         $owner->status = $request->status;
         $owner->remark = $request->remark;
         $owner->save();
-        return redirect('user_page'); 
+        return view('user_page'); 
     }
 }
