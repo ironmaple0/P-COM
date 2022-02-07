@@ -47,12 +47,5 @@
      <th>期間</th>
      <th></th>
 　　</tr>
-        @foreach($owners as $owner)
-        <tr>
-            <td>{{ $owner->owner_id }}</td>
-            <td>{{ $owner->week_day }}</td>
-            <td>{{ $owner->location }}</td>
-            <td>{{ $owner->term }}</td>
-        </tr>
-        @endforeach
+        
   </table>
