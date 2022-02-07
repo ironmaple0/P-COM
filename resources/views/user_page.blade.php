@@ -9,7 +9,7 @@
  <body>
  <form action="search" method="POST">
      @csrf
-　<select name="week_day">
+  <select name="week_day">
   <option value="null">--</option>
   <option value="monday">月曜日</option>  
   <option value="Tuesday">火曜日</option>
@@ -46,6 +46,6 @@
      <th>住所</th>
      <th>期間</th>
      <th></th>
-　　</tr>
+   </tr>
         
   </table>
