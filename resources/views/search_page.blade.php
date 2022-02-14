@@ -50,4 +50,13 @@
      <th>期間</th>
      <th>詳細</th>
    </tr>
+   @foreach($owners as $owner)
+   <tr>
+     <td>{{ $owner->owner_id }}</td>
+     <td>{{ $owner->week_day }}</td>
+     <td>{{ $owner->location }}</td>
+     <td>{{ $owner->term }}</td>
+     <td><a href="{{ route('syousai', ['owner_id'=>$owner->owner_id]) }}">見る</a></td>
+   </tr>
+    @endforeach
   </table>

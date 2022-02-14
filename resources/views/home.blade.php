@@ -25,8 +25,8 @@
                 <div id="container">
                  <div id="main">
                  <h1>始めよう！</h1>
-                 <a>貸す</p>
-                 <a>借りる</p>
+                 <a href="ownerinfo">貸す</a>
+                 <a href="index">借りる</a>
                  </div>
                 </div>
             </div>

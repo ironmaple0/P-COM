@@ -22,3 +22,4 @@ Route::get('ownerinfo','OwnerController@create');
 Route::post('user_page','OwnerController@store');
 Route::get('index','OwnerController@index');
 Route::post('search','SearchController@index');
+Route::get('/show/{owner_id}','SearchController@show')->name('syousai');

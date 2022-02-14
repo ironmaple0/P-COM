@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
- <head>
+ 
+  <head>
   <meta charset="utf-8">
    <title>PArking COMmunity｜駐車場のマッチングサービス</title>
     <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
