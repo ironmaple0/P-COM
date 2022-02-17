@@ -6,7 +6,6 @@
  <head>
  <meta charset="utf-8">
  <title>P-COM 探す画面</title>
-    <link rel="stylesheet" href="{{ asset('css/stylesheet3.css') }}">
  </head>
 
  <body>

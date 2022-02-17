@@ -7,7 +7,6 @@
 <head>
  <meta charset="utf-8">
   <title>ホーム画面</title>
-   <link rel="stylesheet2" href="{{ asset('css/stylesheet2.css') }}">
 </head>
 <div class="container">
     <div class="row justify-content-center">

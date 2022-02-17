@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
 
- @extends('layouts.app')
+@extends('layouts.app')
+
+@section('content')
 
   <head>
    <meta charset="utf-8">
    <title>P-COM 詳細画面</title>
   </head>
 
-  <h1>詳細</h1>
-  
-  <table class = "table table-striped">
+  <div class="container">
+  <div class="row justify-content-center">
+    <h1>詳細</h1>
+  <table class="table table-striped">
       <thead>
           <tr>
-              <th> Pナンバー</th>
+              <th>Pナンバー</th>
               <th>住所</th>
               <th>曜日</th>
               <th>期間</th>
@@ -28,20 +31,23 @@
      </thead>
     <tbody>
         <tr>
-            <td>{{ $owner->owner_id }}</td>
-            <td>{{ $owner->location }}</td>
-            <td>{{ $owner->week_day }}</td>
-            <td>{{ $owner->term }}</td>
-            <td>{{ $owner->number }}</td>
-            <td>{{ $owner->start_time }}</td>
-            <td>{{ $owner->end_time }}</td>
-            <td>{{ $owner->fee }}</td>
-            <td>{{ $owner->size }}</td>
-            <td>{{ $owner->picture }}</td>
-            <td>{{ $owner->status }}</td>
-            <td>{{ $owner->remark }}</td>
+            <td>{{ optional($owner)->owner_id }}</td>
+            <td>{{ optional($owner)->location }}</td>
+            <td>{{ optional($owner)->week_day }}</td>
+            <td>{{ optional($owner)->term }}</td>
+            <td>{{ optional($owner)->number }}</td>
+            <td>{{ optional($owner)->start_time }}</td>
+            <td>{{ optional($owner)->end_time }}</td>
+            <td>{{ optional($owner)->fee }}</td>
+            <td>{{ optional($owner)->size }}</td>
+            <td>{{ optional($owner)->picture }}</td>
+            <td>{{ optional($owner)->status }}</td>
+            <td>{{ optional($owner)->remark }}</td>
         </tr>
     </tbody>
  </table>
-
+ <a href="chat">話してみる</a>
+</div>
+</div>
+</html>
 

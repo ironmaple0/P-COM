@@ -2,6 +2,8 @@
 <html lang="ja">
 
  @extends('layouts.app')
+ 
+ @section('content')
  <head>
   <meta charset="utf-8">
    <title>P-COM 探す画面</title>

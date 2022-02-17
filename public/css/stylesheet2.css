@@ -1,37 +1,57 @@
-@charset "utf-8";
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "ヒラギノ角ゴ　pro W3", "Hiragino KaKu Gothic Pro", "メイリオ"、Meiryo,Osaka, "MS Pゴシック","MS PGothic",sans-serif;
-    color: black;
-    font-size: 16px;
-    line-height: 150%;
-    width:100%;
-    position: relative;
+a {
+  text-decoration:none;
+  font-size: 20px;
 }
 
-#container {
+
+
+
+.chat-container {
     width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    clear: both;
-    display: grid;
-    grid-template-columns: 100vw 30vw;
-}
-
-#main {
-    width:100%;
-    padding: 10px 30px 10px 0px;
-}
-
-.click2{
-    display:inline-block;
+    height: 100%;
+  }
+  
+  .chat-card {
+    height: 67vh;
+    overflow: auto;
+  }
+  
+  .chat-area {
+    width: 70%;
+  }
+  
+  .comment-container {
+    position: fixed;
+    bottom: 20px;
     text-align: center;
-    font-size:50px;
-    font-weight:bold;
-    margin-top:80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding:3px 60px 3px 60px;
-}
+    width: 100%;
+  }
+  
+  .comment-area {
+    width: 70%;
+  }
+  
+  .comment-btn {
+    margin: 0px 10px;
+  }
+  
+  .comment-body {
+    padding: 5px 30px 20px 30px;
+  }
+  
+  .comment-body:hover {
+    background-color: #dfdfdf;
+  }
+  
+  .comment-body-user {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .comment-body-time {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #a0a0a0;
+  }
+
