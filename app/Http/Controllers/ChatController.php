@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Comment;
 use Illuminate\Support\Facades\Auth;
 
-class HomeController extends Controller
+class ChatController extends Controller
 {
     /**
      * Create a new controller instance.
