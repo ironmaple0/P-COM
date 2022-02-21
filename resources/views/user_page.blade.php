@@ -3,6 +3,7 @@
 
  @extends('layouts.app')
  
+ @section('content')
  <head>
  <meta charset="utf-8">
  <title>P-COM 探す画面</title>
@@ -11,6 +12,7 @@
  <body>
  <form action="search" method="POST">
      @csrf
+ <div class="box">
   <select name="week_day">
   <option value="null">--</option>
   <option value="月曜日">月曜日</option>  
@@ -39,6 +41,7 @@
   <option value="1年">1年</option>
   </select>
   <button type="submit" name="search">検索</button>
+ </div>
  </form>
   
   <table class="table table-striped">
@@ -50,3 +53,4 @@
      <th>詳細</th>
    </tr>
   </table>
+  @endsection

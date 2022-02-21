@@ -24,14 +24,17 @@ class ChatController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
+    
+    public function index(){
+        dump("test1");
         $comments = Comment::get();
+        //dd($comments);
         return view('chat', ['comments' => $comments]);
     }
 
     public function add(Request $request)
     {
+     //dd("test2");
     $user = Auth::user();
     $comment = $request->input('comment');
     Comment::create([
@@ -46,5 +49,9 @@ class ChatController extends Controller
     $comments = Comment::orderBy('created_at', 'desc')->get();
     $json = ["comments" => $comments];
     return response()->json($json);
+    }
+
+    public function show() {
+        return view('contract');
     }
 }

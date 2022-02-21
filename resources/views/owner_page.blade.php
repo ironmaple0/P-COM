@@ -2,7 +2,7 @@
 <html lang="ja">
 
  @extends('layouts.app')
- 
+
  @section('content')
  <head>
   <meta charset="utf-8">
@@ -26,3 +26,4 @@
    <input type="submit" value="登録">
   </form> 
  </body>
+ @endsection

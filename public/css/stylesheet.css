@@ -68,3 +68,12 @@ body {
 a{
     color:#FFF;
 }
+
+p{
+    color:black;
+    line-height: 200%;
+}
+
+#flow{
+    line-height:200%;
+}

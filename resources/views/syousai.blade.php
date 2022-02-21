@@ -46,8 +46,10 @@
         </tr>
     </tbody>
  </table>
- <a href="chat">話してみる</a>
+ <span class="click1"><a href="/chat">話してみる</a></span>
+ <span class="click1"><a href="/contract">契約する</a></span>
 </div>
 </div>
+@endsection
 </html>
 
