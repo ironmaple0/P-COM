@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
    <title>PArking COMmunity｜駐車場のマッチングサービス</title>
-    <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/stylesheet.css') }}">
  </head>
  <body>
   <div id="header">
