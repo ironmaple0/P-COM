@@ -50,8 +50,6 @@ body {
     max-height:100%;
 }
 
-.resizeimage img{ width: 100vw;}
-
 .click1{
     display:inline-block;
     text-align: center;
