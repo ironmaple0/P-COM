@@ -53,5 +53,9 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    }
+    },
+
+    "compile": [
+    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+]
 }
